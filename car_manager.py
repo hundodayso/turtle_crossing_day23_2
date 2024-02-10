@@ -25,6 +25,7 @@ class CarManager:
         for car in self.all_cars:
             car_new_xpos = car.xcor() - self.car_speed
             car.setx(car_new_xpos)
+            print(self.car_speed)
 
     def level_up(self):
-        self.car_speed *= 1.2
+        self.car_speed *= 1.5
