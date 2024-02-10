@@ -11,6 +11,10 @@ class Player(Turtle):
         self.shape("turtle")
         self.penup()
         self.setheading(90)
+        self.starting_position()
+
+
+    def starting_position(self):
         self.setpos(STARTING_POSITION)
 
     def move_up(self):
